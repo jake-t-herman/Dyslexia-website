@@ -1,12 +1,101 @@
 html {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 1rem;
-    margin: 0 auto;
+    font-size: 1.2rem;
     overflow: scroll;
-    background-color: #D6EFEE;
+    background-color: rgb(246, 244, 231);
+    max-width: 1100px;
+    scroll-behavior: smooth;
 }
 
-.desktop-logo img {
-    height: 500px;
-    width: auto;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+/* Header and NAV section */
+
+header {
+    display: flex;
+    background-color: #D6EFEE;
+    height: 10rem;
+}
+
+header .image-container {
+    display: flex;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 10rem;
+}
+
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    top: 10rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+nav li {
+    padding: 0.5rem 1rem;
+    border-left: 1px solid black;
+}
+
+#last-one {
+    border-right: 1px solid black;
+}
+
+/* Main content section*/
+
+.intro-wrapper {
+    width: 100%;
+}
+
+.jumbotron {
+    display: flex;
+    padding: 0 10%;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.jumbotron img {
+    width: 100%;
+    height: auto;
+    max-height: 25rem;
+}
+
+.bio-wrapper {
+    display: flex;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.bio {
+    display: block;
+    width: 75%;
+    padding-left: 1rem;
+}
+
+.bio aside {
+    
 }
