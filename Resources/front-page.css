@@ -1,0 +1,12 @@
+html {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    overflow: scroll;
+    background-color: #D6EFEE;
+}
+
+.desktop-logo img {
+    height: 500px;
+    width: auto;
+}
