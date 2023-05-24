@@ -1,9 +1,8 @@
 body {
-    /*background-color: rgb(246, 244, 231);*/
+    background-color: rgb(246, 244, 231);
     font-family: 'Didact Gothic', sans-serif;
     font-size: 1.2rem;
     overflow: scroll;
-    max-width: 1100px;
     scroll-behavior: smooth;
 }
 
@@ -12,16 +11,16 @@ body {
     padding: 0;
 }
 
+
 a {
     color: black;
-    text-decoration: none;
-    
+    text-decoration: underline;
 }
 
 p {
     font-weight: 400;
     font-size: 1.2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
 }
 
 h2 {
@@ -46,11 +45,13 @@ header {
     display: flex;
     background-color: #D6EFEE;
     height: 10rem;
+    align-items: center;
 }
 
 .header-image-container {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .header-image-container img {
@@ -81,27 +82,29 @@ nav ul {
 }
 
 
-/*#last-one {
-    border-right: 1px solid black;
-}*/
-
 nav li :hover {
     background-color: darkblue;
     color: orange;
     transition: 0.15s;
 }
 
+.social-logo {
+    height: 1.25rem
+}
+
+
+
 /* Main content section*/
 
 aside {
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .image-container {
     display: block;
     max-width: 30%;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
     text-align: center;
 }
 
@@ -117,37 +120,115 @@ aside {
 }
 
 
-
 .bio-wrapper article {
     padding: 0 1rem;
-    width: 70%;
 }
+
 
 .quote {
     font-size: 1.2rem;
-    padding: 2rem 10% 1rem 10%;
+    padding: 2rem 10% 0.5rem 10%;
+    font-weight: 700;
 }
 
 .caption {
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding-left: 10%;
 }
 
-/* Offerings section */
-
-
-
-.jumbotron {
-    float: right;
-    height: auto;
-    justify-content: center;
-    margin-bottom: 1rem;
-    flex-direction: column;
-    width: 50%;
+#text-wrapper {
+    width: 85%
 }
 
-.jumbotron img {
-    width: 100%;
-    height: auto;
-    max-height: 25rem;
+@media only screen and (max-width: 1125px) {
+    #quote2, #caption2 {
+        display: none
+    }
 }
+
+@media only screen and (max-width: 960px) {
+    #quote1, #caption1 {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        text-align: center;
+    }
+
+    aside {
+        font-size: 0.75rem;
+    }
+
+   
+    .section-wrapper {
+        margin: 1rem ;
+        padding-bottom: 0;
+    }
+
+    #contact {
+        border-bottom: none;
+    }
+
+    .bio-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        /*max-height: 21rem;*/
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .image-container img {
+        max-height: 21rem;
+    }
+
+
+}
+
+/* contacts */
+
+.in-person p {
+    padding-bottom: 0.5rem;
+}
+
+.socials-container {
+    height: 1.2rem;
+    width: auto;
+    padding: 0 0 0.5rem 3rem;
+}
+
+.socials img {
+    height: 100%;
+    width: auto;
+}
+
+#contact h2 {
+    padding: 0 1rem;
+}
+
+#insta {
+    height: 2.2rem;
+}
+
+#contacts {
+    display: flex;
+    padding: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #contacts {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .socials-container {
+        padding: 0;
+        padding-bottom: 0.5rem;
+    }
+}
+
