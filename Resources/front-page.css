@@ -81,7 +81,6 @@ nav ul {
     padding: 0.5rem;
 }
 
-
 nav li :hover {
     background-color: darkblue;
     color: orange;
@@ -140,6 +139,12 @@ aside {
     width: 85%
 }
 
+@media only screen and (max-width: 1400px) {
+    #quote3, #caption3 {
+        display: none
+    }
+}
+
 @media only screen and (max-width: 1125px) {
     #quote2, #caption2 {
         display: none
@@ -162,7 +167,6 @@ aside {
         font-size: 0.75rem;
     }
 
-   
     .section-wrapper {
         margin: 1rem ;
         padding-bottom: 0;
