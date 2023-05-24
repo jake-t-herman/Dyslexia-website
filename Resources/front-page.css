@@ -29,6 +29,16 @@ h2 {
     color: darkblue;
 }
 
+br {
+    border: 1px solid black;
+}
+
+.section-wrapper {
+    border-bottom: 1px black solid;
+    margin: 2rem 2rem 0rem 2rem;
+    padding-bottom: 2rem;
+}
+
 
 /* Header and NAV section */
 
@@ -88,19 +98,44 @@ aside {
     font-size: 1rem;
 }
 
-.intro-wrapper {
-    width: 100%;
-}
-
-.bio .image-container {
-    width: 100%;
-    height: auto;
+.image-container {
+    display: block;
+    max-width: 30%;
+    padding: 0 1rem;
+    text-align: center;
 }
 
 .image-container img {
     width: 100%;
     height: auto;
 }
+
+
+.bio-wrapper {
+    display: flex;
+    /*padding: 2rem;*/
+}
+
+
+
+.bio-wrapper article {
+    padding: 0 1rem;
+    width: 70%;
+}
+
+.quote {
+    font-size: 1.2rem;
+    padding: 2rem 10% 1rem 10%;
+}
+
+.caption {
+    font-size: 1rem;
+    padding-left: 10%;
+}
+
+/* Offerings section */
+
+
 
 .jumbotron {
     float: right;
@@ -116,21 +151,3 @@ aside {
     height: auto;
     max-height: 25rem;
 }
-
-.bio-wrapper {
-    display: flex;
-    padding: 2rem 2.5%;
-}
-
-.bio {
-    display: block;
-    max-width: 30%;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-.bio-wrapper article {
-    padding: 0 1rem;
-    width: 70%;
-}
-
