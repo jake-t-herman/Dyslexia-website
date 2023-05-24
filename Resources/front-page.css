@@ -187,6 +187,10 @@ aside {
         max-height: 21rem;
     }
 
+    .social-link {
+        display: none;
+    }
+
 
 }
 
