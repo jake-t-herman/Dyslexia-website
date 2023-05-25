@@ -23,13 +23,14 @@ p {
     padding-bottom: 1.25rem;
 }
 
+h1 {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
 h2 {
     font-weight: 700;
     color: darkblue;
-}
-
-br {
-    border: 1px solid black;
 }
 
 .section-wrapper {
@@ -97,14 +98,53 @@ nav li :hover {
 
 .game-wrapper {
     border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    max-width: 50rem;
+    margin: 0 auto 1rem auto;
 }
 
-.outside-box {
-    border: 1px black solid;
+.game-wrapper h2 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.game-wrapper button {
+    padding: 0.5rem;
+    border: none;
+    background-color: orange;
+    color: darkblue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.game-box {
+    border-top: 1px black solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 3rem;
+    margin: 0 20%;
+    padding-bottom: 1rem;
 }
 
 .inside-box {
-    border: 1px black solid;
+    width: 15%;
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-box {
+    min-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container {
@@ -117,13 +157,6 @@ nav li :hover {
 .image-container img {
     width: 100%;
     height: auto;
-}
-
-
-
-
-#text-wrapper {
-    width: 85%
 }
 
 
@@ -152,7 +185,6 @@ nav li :hover {
     }
 
     .image-container {
-        /*max-height: 21rem;*/
         max-width: 100%;
         padding: 1rem;
     }

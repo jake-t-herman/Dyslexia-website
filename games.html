@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Gaegu:wght@400;700" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <!--<script id="random-word-game" src="./Resources/random-word-game.js" async></script>-->
+        <script id="random-word-game" src="./Resources/random-word-game.js" async></script>
     </head>
     <body>
           <!-- Header -->
@@ -33,13 +33,16 @@
             <div class="game-wrapper">
                 <h2>Random Word Generator</h2>
                 <button id="start-button">Click here to generate a random word to sound out!</button>
-                <div class="outside-box">
-                    <section class="inside-box" id="inside-box-1">blank</section>
-                    <section class="inside-box" id="inside-box-2">blank</section>
-                    <section class="inside-box" id="inside-box-3">blank</section>
-                    <section class="bottom-box" id="word-box">blank</section>
+                <section class="top-box" id="word-box"></section>
+                <div class="game-box">
+                    <section class="inside-box" id="inside-box-1"></section>
+                    <section class="dash-box">-</section>
+                    <section class="inside-box" id="inside-box-2"></section>
+                    <section class="dash-box">-</section>
+                    <section class="inside-box" id="inside-box-3"></section>
+                    
                 </div>
-                <div class="generated-word"></div>
+                
             </div>
         </section>
 
@@ -62,6 +65,5 @@
                 </div>
             </section>
         </footer>
-        <script id="random-word-game" src="./Resources/random-word-game.js" async></script>
     </body>
 </html>
