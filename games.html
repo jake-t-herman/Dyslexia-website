@@ -2,10 +2,11 @@
 <html>
     <head>
         <title aria-label="shoot 4 the stars education">shoot4thestarseducation</title>
-        <link rel="stylesheet" href="./Resources/front-page.css">
+        <link rel="stylesheet" href="./games-page.css">
         <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Gaegu:wght@400;700" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <script id="random-word-game" src="./Resources/random-word-game.js" async></script>
     </head>
     <body>
           <!-- Header -->
@@ -25,5 +26,44 @@
                         </ul>
         </nav>
 
-        
         <!-- Main Content -->
+        
+        <section class="section-wrapper" id="word-chooser">
+            <h1>Dyslexia teaching games</h1>
+            <div class="game-wrapper">
+                <h2>Random Word Generator</h2>
+                <button id="start-button">Click here to generate a random word to sound out!</button>
+                <section class="top-box" id="word-box"></section>
+                <div class="game-box">
+                    <section class="inside-box" id="inside-box-1"></section>
+                    <section class="dash-box">-</section>
+                    <section class="inside-box" id="inside-box-2"></section>
+                    <section class="dash-box">-</section>
+                    <section class="inside-box" id="inside-box-3"></section>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <!--footer-->
+        <footer class="section-wrapper" id="contact">
+            <h2>Contact</h2>
+            <section id="contacts">
+                <div class="in-person">
+
+                    <p>sftseducation@gmail.com</p>
+                    <p>07488251437</p>
+                </div>
+                <div class="socials">
+                    <div class="socials-container">
+                        <a href="https://www.facebook.com/profile.php?id=100092489015017" target="_blank" aria-label="facebook logo"><img src="./Resources/Facebook_Logo_(2019).svg.png" alt="facebook logo"></a>
+                    </div>
+                    <div class="socials-container">
+                    <a href="https://www.instagram.com/sftseducation/?fbclid=IwAR3CskYEG6Y5LTZEDxExNWTGg2eX60NJ7iFcXnxaJAsEQtZeWhwUWF2YFH4" target="_blank" aria-label="instagram logo"><img src="./Resources/Instagram_logo.svg.png" alt="Instagram logo" id="insta"></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
