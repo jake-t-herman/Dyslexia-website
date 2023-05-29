@@ -43,7 +43,7 @@ const wordPrinter = () => {     //prints random word to HTML
     boxOne.innerHTML = Sounds[0];
     boxTwo.innerHTML = Sounds[1];
     boxThree.innerHTML = Sounds[2];
-    WordBox.innerHTML = `Your word to pronounce: ${Sounds[0]}${Sounds[1]}${Sounds[2]}, sounded as ${Sounds[0]}-${Sounds[1]}-${Sounds[2]}`
+    WordBox.innerHTML = `Your word to pronounce: ${Sounds[0]}${Sounds[1]}${Sounds[2]}, sounded as:`
     Sounds=[];
 }
 
